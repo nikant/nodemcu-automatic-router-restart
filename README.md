@@ -1,7 +1,7 @@
 # NodeMCU (ESP8266) Automatic Router Restart
 
 
-* Info and schematic: 
+* Info and schematic: https://nobugsjustfeatures.wordpress.com/2021/03/01/nodemcu-esp8266-automatic-router-restart/
 
 ----------------
 
