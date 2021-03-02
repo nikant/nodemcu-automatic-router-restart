@@ -3,7 +3,7 @@
 
 const char* ssid     = "yourssid"; // WiFi SSID
 const char* password = "yourpassword"; // WiFi password
-const char* testHostname[]={"www.google.com","www.microsoft.com","www.cosmote.gr"};
+const char* testHostname[]={"www.google.com","www.microsoft.com","www.apple.com"};
 const int HostnamesCount = 3;
 //const char* testHostname = "www.google.com";
 IPAddress HostIP;
