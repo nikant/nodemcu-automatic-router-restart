@@ -3,9 +3,12 @@
 
 const char* ssid     = "yourssid"; // WiFi SSID
 const char* password = "yourpassword"; // WiFi password
-const char* testHostname = "www.google.com";
+const char* testHostname[]={"www.google.com","www.microsoft.com","www.cosmote.gr"};
+const int HostnamesCount = 3;
+//const char* testHostname = "www.google.com";
 IPAddress HostIP;
 unsigned int localPort = 80;
+
 const int RELAY_Pin = 13;               //Relay Pin D7 on NodeMCU
 
 #define MINUTES (60L * 1000)
@@ -110,7 +113,7 @@ void loop() {
   switch (CurrentState) {
 
     case TESTING_STATE:
-      if (!WiFi.hostByName(testHostname, HostIP)) {
+      if (!WiFi.hostByName(testHostname[random(HostnamesCount)], HostIP)) {
         CurrentState = FAILURE_STATE;
       } else {
         Serial.println("resolve success!");
