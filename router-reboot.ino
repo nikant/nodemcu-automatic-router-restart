@@ -87,7 +87,8 @@ void setup() {
   Serial.print(String("Connecting to ") + ssid);
 
   WiFi.begin(ssid, password);
-
+  WiFi.mode(WIFI_STA);
+  
   // A workaround is to replace
   // while (WiFi.status() != WL_CONNECTED) {
   // with
